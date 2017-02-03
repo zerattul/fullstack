@@ -1,0 +1,683 @@
+mixin menu(url, name)
+  li.nav-list__element #[a(href=`${url}`) #{name}]
+
+mixin pic(name, ext)
+  picture
+    source(srcset=`img/webp/${name}.webp`, type="image/webp")
+    img(src=`img/${name}.${ext}`)
+
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+  each css in files.CSS
+    link(rel="stylesheet", href=`${css}`)
+
+  title Rianjani - Inicio
+body(data-offset="70")
+  //- Intro
+  section#intro.intro
+    .m-center
+      .intro-wrapper
+        div.intro-wrapper-logo
+          h1.intro-wrapper-logo__h1 R
+
+        div.intro-wrapper-text
+          h2.intro-wrapper-text__h2 Clean, Awesome and Multi-Purpose.
+          p.intro-wrapper-text__text Responsive Multi-Purpose Theme For Running Serious Business
+
+        div.intro-btn
+          a(href="#").mx-btnIntro Learn More
+
+
+  //- Nav
+  nav#nav.nav
+    div.m-center
+      div.nav-wrapper
+        div.nav-logo
+          a(href="#intro").nav-logo__logo Rianjani
+
+        ul.nav-list
+          +menu("#who", "ABOUT")
+          +menu("#skill", "SKILLS")
+          +menu("#servicies", "SERVICIES")
+          +menu("#work", "PORTAFOLIO")
+          +menu("#team", "TEAM")
+          +menu("#testimonial", "TESTIMONIALS")
+          +menu("#pricing", "PRICING")
+          +menu("#contact", "CONTACT")
+
+
+  //- Who
+  section#who.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 Who We Are?
+          h3.m__h3 Some Things You Should Know About Us
+          span.m__lineBottom
+
+        div.m-section-cont
+          div#who-carousel.owl-carousel.owl-theme.owl-loaded.wow.bounceInUp.who-col
+            div.who-col-caoursel
+              +pic("who-we-are-image-1", "jpg")
+            div.who-col-caoursel
+              +pic("who-we-are-image-2", "jpg")
+          div.owl-dots
+            div.owl-dot.active
+              span
+            div.owl-dot
+              span
+
+          div(data-wow-delay="200ms").who-col.who-text.wow.bounceInUp
+            h4.m__h4 A Little About Our Past
+            p.m__p Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat. Gunung Rinjani dengan titik tertinggi 3.726 m dpl, mendominasi sebagian besar pemandangan Pulau Lombok bagian utara. Di sebelah barat kerucut Rinjani terdapat kaldera dengan luas sekitar 3.500 m x 4.800 m, memanjang kearah timur dan barat.
+            div.btn-gen
+              a(href="#").mx-btn Read More
+
+
+  //- Facts
+  section#facts.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 FUN FACTS
+          h3.m__h3 SOME OF THE COOL FACTS ABOUT US THAT WILL BLOW YOUR MIND
+          span.m__lineBottom
+        .m-section-cont
+          ul.factsList.wow.fadeInUp
+            li.factsList-item
+              span.icon-thumbs-o-up.factsList-item__icon
+              span(data-from="2780" data-to="3532" data-refresh-interval="2").factsList-item__count 2780
+              span.factsList-item__word PROYECTS
+            li.factsList-item
+              span.icon-smile-o.factsList-item__icon
+              span(data-from="487" data-to="674" data-refresh-interval="2").factsList-item__count 487
+              span.factsList-item__word CLIENTS
+            li.factsList-item
+              span.icon-coffee.factsList-item__icon
+              span(data-from="13730" data-to="14234" data-refresh-interval="2").factsList-item__count 13730
+              span.factsList-item__word COFFEE
+            li.factsList-item
+              span.icon-gift.factsList-item__icon
+              span(data-from="154" data-to="242" data-refresh-interval="2").factsList-item__count 154
+              span.factsList-item__word AWARDS
+
+
+  //- why
+  section#why.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 WHY CHOOSE US?
+          h3.m__h3 6 REASONS WHY WE ARE THE BEST
+          span.m__lineBottom
+
+        div.m-section-cont
+          ul.whyList
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-rocket.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 SPEED
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-thumbs-o-up.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 QUALITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-star.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 EXPERTISE
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-shield.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 SECURITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-paper-plane-o.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 RELIABILITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.whyList-item.wow.flipInY
+              div.whyList-item-icon
+                span.icon-life-ring.whyList-item-icon__icon
+              div.whyList-text
+                h3.m__h4 PRICE
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+  //- skills
+  section#skill.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 OUR MAIN SKILLS
+          h3.m__h3 WE HAVE CREATIVITY AND KNOWLEDGE TO DEVELOPMENT
+          span.m__lineBottom
+
+        .m-section-cont
+          .skillCol.wow.flipInX
+            p.m__p.s-p--darkWhite.s-p--big Gunung Rinjani merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat.
+            p.m__p.s-p--white.s-p--bold Secara administratif gunung ini berada dalam wilayah 3 kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat. Gunung Rinjani dengan titik tertinggi 3.726 m dpl, mendominasi sebagian besar pemandangan Pulau Lombok bagian utara.
+          .skillCol.wow.flipInY
+            .skillCol-barsCont
+              .skillCol-barsCont-item(data-percent="90")
+                span.skillCol-barsCont-item__text User Experience
+              .skillCol-barsCont-item(data-percent="85")
+                span.skillCol-barsCont-item__text Web & Mobile Design
+              .skillCol-barsCont-item(data-percent="70")
+                span.skillCol-barsCont-item__text Graphic Design
+              .skillCol-barsCont-item(data-percent="80")
+                span.skillCol-barsCont-item__text Identity & Branding
+              .skillCol-barsCont-item(data-percent="90")
+                span.skillCol-barsCont-item__text 3D Design
+              .skillCol-barsCont-item(data-percent="75")
+                span.skillCol-barsCont-item__text Icon & Illustrations
+
+            .skillCol-stats
+              .skillCol-stats-item.leftBar
+                span.skillCol-stats-item__word Newbie
+              .skillCol-stats-item.leftBar
+                span.skillCol-stats-item__word Decent
+              .skillCol-stats-item.rigthBar.word--rigth
+                span.skillCol-stats-item__word Pretty Good
+              .skillCol-stats-item.rigthBar.word--rigth
+                span.skillCol-stats-item__word Super Hero
+
+
+  //- servicies
+  section#servicies.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 OUR SERVICES
+          h3.m__h3 WE ARE EXPERTS IN DEVELOPING YOUR BUSINESS
+          span.m__lineBottom
+
+        div.m-section-cont
+          div.servicesItem.wow.flipInY
+            span.icon-lightbulb-o.servicesItem__icon
+            h3.m__h3.servicesItem__title WEB DESIGN
+            span.servicesItem__line
+            p.m__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          div.servicesItem.wow.flipInY
+            span.icon-heart-o.servicesItem__icon
+            h3.m__h3.servicesItem__title GRAPHIC DESIGN
+            span.servicesItem__line
+            p.m__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          div.servicesItem.wow.flipInY
+            span.icon-flask.servicesItem__icon
+            h3.m__h3.servicesItem__title BRANDING
+            span.servicesItem__line
+            p.m__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+
+  //- quote
+  section#quote.mx-sectionWth
+    .m-center
+      .m-section-cont
+        .quote.wow.fadeInUp
+          span.icon-quote.quote__icon
+          h3.m__h3.quote__text.s-p--darkWhite "The business schools reward difficult complex behavior more than simple behavior, but simple behavior is more effective".
+          p.m__p.quote__autor (Warren Buffet)
+
+
+  //- work
+  section#work.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 OUR LATEST WORK
+          h3.m__h3 YOU CAN JUDGE US BY THE WORK WE HAVE DONE
+          span.m__lineBottom
+
+        div.m-section-cont
+          .work
+            ul.work-menu
+              li.work-menu-item
+                a(href="#" data-filter="*").work-menu-item__link ALL
+              li.work-menu-item
+                a(href="#" data-filter=".identity").work-menu-item__link IDENTITY
+              li.work-menu-item
+                a(href="#" data-filter=".logo").work-menu-item__link LOGO
+              li.work-menu-item
+                a(href="#" data-filter=".illustration").work-menu-item__link ILLUSTRATION
+
+            .work-portfolio
+              .work-portfolio-item.identity
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+
+              .work-portfolio-item.logo
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.illustration
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.identity
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.logo
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.logo
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.illustration
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+              .work-portfolio-item.logo
+                .work-portfolio-item-cont
+                  +pic("portfolio/portfolio-image-1", "jpg")
+                  .work-portfolio-item-cont-hover
+                    a(href="img/portfolio/portfolio-image-1.jpg").work-portfolio-item-cont-hover__img
+                      h3.work-portfolio-item-cont-hover__title PROYECT TITLE 1
+                      h4.work-portfolio-item-cont-hover__subtitle Lorem Ipsum
+
+
+
+  //- social
+  section#social.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 KEEP IN TOUCH WITH US
+          h3.m__h3 WE WOULD LOVE TO KNOW FROM YOU
+          span.m__lineBottom
+
+        .m-section-cont
+          ul.social.wow.fadeInUp
+            li.social-item
+              span.icon-facebook.social-item__icon
+              span.social-item__word FACEBOOK
+            li.social-item
+              span.icon-twitter.social-item__icon
+              span.social-item__word TWITTER
+            li.social-item
+              span.icon-google-plus.social-item__icon
+              span.social-item__word GOOGLE +
+            li.social-item
+              span.icon-youtube.social-item__icon
+              span.social-item__word YOUTUBE
+            li.social-item
+              span.icon-social-pinterest.social-item__icon
+              span.social-item__word PINTEREST
+            li.social-item
+              span.icon-instagram.social-item__icon
+              span.social-item__word INSTAGRAM
+
+
+  //- team
+  section#team.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 MEET THE TEAM
+          h3.m__h3 WE ARE HERE FOR YOU
+          span.m__lineBottom
+
+        div.m-section-cont
+          ul.team
+            li(data-wow-delay="50ms").team-item.wow.fadeInUp
+              +pic("meet-the-team-image-1", "jpg")
+            li(data-wow-delay="200ms").team-item.wow.fadeInUp
+              +pic("meet-the-team-image-1", "jpg")
+            li(data-wow-delay="350ms").team-item.wow.fadeInUp
+              +pic("meet-the-team-image-1", "jpg")
+            li(data-wow-delay="500ms").team-item.wow.fadeInUp
+              +pic("meet-the-team-image-1", "jpg")
+
+
+  //- testimonials
+  section#testimonials.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 TESTIMONIALS
+          h3.m__h3 WE MAKE OUR CUSTOMERS HAPPY
+          span.m__lineBottom
+
+        .m-section-cont
+          .testimonials
+            .testimonials-item.wow.flipInY
+              .testimonials-item-comment
+                h4.testimonials-item-comment__title Lorem ipsum Title
+                p.testimonials-item-comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .testimonials-item-user
+                .testimonials-item-user-img
+                  +pic("testimonial-image-1", "jpg")
+                .testimonials-item-user-data
+                  p.testimonials-item-user-data__user @JuanGabriel
+                  p.testimonials-item-user-data__range CEO Google Plus
+
+            .testimonials-item.wow.flipInY
+              .testimonials-item-comment
+                h4.testimonials-item-comment__title Lorem ipsum Title
+                p.testimonials-item-comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .testimonials-item-user
+                .testimonials-item-user-img
+                  +pic("testimonial-image-1", "jpg")
+                .testimonials-item-user-data
+                  p.testimonials-item-user-data__user @JuanGabriel
+                  em.testimonials-item-user-data__range CEO Google Plus
+
+            .testimonials-item.wow.flipInY
+              .testimonials-item-comment
+                h4.testimonials-item-comment__title Lorem ipsum Title
+                p.testimonials-item-comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .testimonials-item-user
+                .testimonials-item-user-img
+                  +pic("testimonial-image-1", "jpg")
+                .testimonials-item-user-data
+                  p.testimonials-item-user-data__user @JuanGabriel
+                  em.testimonials-item-user-data__range CEO Google Plus
+
+
+  //- pricing
+  section#pricing.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 OUR PRICING
+          h3.m__h3 WHAT WE CAN OFFER FOR OUR CUSTOMERS
+          span.m__lineBottom
+
+        div.m-section-cont
+          ul.pricing
+            li(data-wow-delay="50ms").pricing-item.wow.fadeInUp
+              .pricing-item-top
+                h3.pricing-item-top__title STARTED
+                .pricing-item-top-price
+                  span.pricing-item-top-price__dollar $
+                  span.pricing-item-top-price__number 18
+                  span.pricing-item-top-price__date /month
+                p.pricing-item-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 4 Core Proccesor
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 100GB Store
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 24/7 Free Support
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data Weekly Backups
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data GET STARTED
+            li(data-wow-delay="150ms").pricing-item.wow.fadeInUp
+              .pricing-item-top
+                h3.pricing-item-top__title BASIC
+                .pricing-item-top-price
+                  span.pricing-item-top-price__dollar $
+                  span.pricing-item-top-price__number 18
+                  span.pricing-item-top-price__date /month
+                p.pricing-item-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 4 Core Proccesor
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 100GB Store
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 24/7 Free Support
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data Weekly Backups
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data GET STARTED
+
+            li(data-wow-delay="250ms").pricing-item.wow.fadeInUp
+              .pricing-item-top
+                h3.pricing-item-top__title PRO
+                .pricing-item-top-price
+                  span.pricing-item-top-price__dollar $
+                  span.pricing-item-top-price__number 18
+                  span.pricing-item-top-price__date /month
+                p.pricing-item-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 4 Core Proccesor
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 100GB Store
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 24/7 Free Support
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data Weekly Backups
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data GET STARTED
+
+            li(data-wow-delay="350ms").pricing-item.wow.fadeInUp
+              .pricing-item-top
+                h3.pricing-item-top__title ULTRA
+                .pricing-item-top-price
+                  span.pricing-item-top-price__dollar $
+                  span.pricing-item-top-price__number 18
+                  span.pricing-item-top-price__date /month
+                p.pricing-item-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 4 Core Proccesor
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 100GB Store
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data 24/7 Free Support
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data Weekly Backups
+              div.pricing-item-dataCont
+                span.pricing-item-dataCont__data GET STARTED
+
+
+  //- coming
+  section#coming.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 COMING SOON
+          h3.m__h3 WE'RE MAKING SOMETHING INTERESTING AND AWESOME PRODUCTS AMAZING
+          span.m__lineBottom
+
+        .m-section-cont
+          .coming
+            ul.coming-list.wow.fadeInUp
+              li.coming-list-item
+                span.coming-list-item__number 121
+                span.coming-list-item__date Days
+                span.coming-list-item__line
+
+              li.coming-list-item
+                span.coming-list-item__number 15
+                span.coming-list-item__date Hours
+                span.coming-list-item__line
+
+              li.coming-list-item
+                span.coming-list-item__number 35
+                span.coming-list-item__date Minutes
+                span.coming-list-item__line
+
+              li.coming-list-item
+                span.coming-list-item__number 34
+                span.coming-list-item__date Seconds
+                span.coming-list-item__line
+
+            .coming-notify
+              .coming-notify-data
+                input(placeholder="example@email.com").coming-notify-data__email
+                button.coming-notify-data__btn NOTIFY ME
+              p.coming-notify__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+  //- history
+  section#history.mx-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 OUR HISTORY
+          h3.m__h3 TRAVEL THROUGH TIME WITH US!
+          span.m__lineBottom
+
+        div.m-section-cont
+          ul.history
+            li.history-item
+              div.history-item-cont.wow.fadeInLeft
+                div.history-item-cont-title
+                  h3.history-item-cont-title__title Timeline Title
+                +pic("timeline-image-1","jpg")
+                p.history-item-cont__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.
+              div.history-item-circle
+                span.history-item-circle__circle
+
+            li.history-item
+              div.history-item-cont.cont-left.wow.fadeInRight
+                div.history-item-cont-title
+                  h3.history-item-cont-title__title Timeline Title
+                +pic("timeline-image-1","jpg")
+                p.history-item-cont__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.
+              div.history-item-circle.circle-left
+                span.history-item-circle__circle
+
+            li.history-item
+              div.history-item-cont
+                div.history-item-cont-title.arrow-left.wow.fadeInLeft
+                  h3.history-item-cont-title__title Timeline Title
+                +pic("timeline-image-1","jpg")
+                p.history-item-cont__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.
+              div.history-item-circle
+                span.history-item-circle__circle
+
+            li.history-item
+              div.history-item-cont.cont-left.wow.fadeInRight
+                div.history-item-cont-title
+                  h3.history-item-cont-title__title Timeline Title
+                +pic("timeline-image-1","jpg")
+                p.history-item-cont__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha.
+              div.history-item-circle.circle-left
+                span.history-item-circle__circle
+
+
+  //- contact
+  section#contact.mx-sectionWth
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 CONTACT US
+          h3.m__h3 DON'T HESITATE TO CONTACT US
+          span.m__lineBottom
+
+        .m-section-cont
+          ul.contact
+            li.contact-col
+              div.contact-col-form
+                label NAME:
+                input(type="text" placeholder="Enter Name")
+                label EMAIL:
+                input(type="email" placeholder="Enter Name")
+                label SUBJECT:
+                input(type="text" placeholder="Enter Name")
+              div.contact-col-form
+                label MESSAGE:
+                textarea(placeholder="Enter Message")
+                button SEND MESSAGE
+            li.contact-social
+              p.contact-social__span OR
+              h4.contact-social__text FIND US ON SOCIAL MEDIA!
+              ul.contact-social-list
+                li.contact-social-list-item
+                  span.icon-facebook.contact-social-list-item__icon
+                li.contact-social-list-item
+                  span.icon-twitter.contact-social-list-item__icon
+                li.contact-social-list-item
+                  span.icon-google-plus.contact-social-list-item__icon
+                li.contact-social-list-item
+                  span.icon-youtube.contact-social-list-item__icon
+                li.contact-social-list-item
+                  span.icon-social-pinterest.contact-social-list-item__icon
+                li.contact-social-list-item
+                  span.icon-instagram.contact-social-list-item__icon
+    .map
+      #map
+
+    .m-center
+      .m-section-cont
+        .contact-foot
+          h4.contact-foot__title GET IN TOUCH
+          p.m__p.contact-foot__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla rebds vel pellentesqu
+
+          ul.contact-foot-list
+            li.contact-foot-list-item
+              span.icon-phone.contact-foot-list-item__icon
+              span.contact-foot-list-item__text +622176811
+            li.contact-foot-list-item
+              span.icon-envelope-o.contact-foot-list-item__icon
+              span.contact-foot-list-item__text no-reply@rinjani.com
+            li.contact-foot-list-item
+              span.icon-marker.contact-foot-list-item__icon
+              span.contact-foot-list-item__text 14374 Salemba Raya, Central Jakarta
+            li.contact-foot-list-item
+              span.icon-clock-o.contact-foot-list-item__icon
+              span.contact-foot-list-item__text Monday to Friday - 8.30 PM to 17 PM
+
+          ul.contact-foot-social
+            li.contact-foot-social-item
+              span.icon-facebook.contact-foot-social-item__icon
+            li.contact-foot-social-item
+              span.icon-twitter.contact-foot-social-item__icon
+            li.contact-foot-social-item
+              span.icon-google-plus.contact-foot-social-item__icon
+            li.contact-foot-social-item
+              span.icon-youtube.contact-foot-social-item__icon
+            li.contact-foot-social-item
+              span.icon-social-pinterest.contact-foot-social-item__icon
+            li.contact-foot-social-item
+              span.icon-instagram.contact-foot-social-item__icon
+
+        .contact-foot
+          h4.contact-foot__title ABOUT US
+          p.m__p.contact-foot__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat.
+        .contact-foot
+          h4.contact-foot__title NEWSLETTER
+          p.m__p.contact-foot__text Keep yourself up to date!
+
+          .contact-foot-form
+            label Email Addres:
+            input
+            label First Name:
+            input
+            button SUSCRIBE
+
+
+  //- footer
+  footer#footer.mx-sectionWth
+    .footer
+      .m-center
+        p.footer__text Copyright © 2016 <span>Rinjani.</span>
+
+  each js in files.JS
+    script(src=`${js}`)

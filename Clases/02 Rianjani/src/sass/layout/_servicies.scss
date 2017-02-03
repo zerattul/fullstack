@@ -1,0 +1,35 @@
+// ::::::::::: Services :::::::::::: //
+
+.servicesItem{
+  text-align: center;
+
+  &__icon{
+    color         : $verde;
+    border        : 1px solid $verde;
+    border-radius : 50%;
+    font-size     : 3.5rem;
+    width         : 100px;
+    height        : 100px;
+    display       : inline-block;
+    line-height   : 120px;
+    cursor        : pointer;
+    transition    : all 200ms ease;
+
+    &:hover{
+      background-color : $verde;
+      color            : $whiteBG;
+    }
+  }
+  &__title{
+    padding        : 2rem 0  2rem;
+    letter-spacing : 3px;
+    font-size      : 2rem;
+  }
+
+  &__line{
+    width         : 100px;
+    display       : inline-block;
+    border-bottom : 1px solid $verde;
+    margin-bottom : 2rem;
+  }
+}

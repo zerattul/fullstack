@@ -1,0 +1,125 @@
+.history-cont{
+  margin-top: 4rem;
+
+  .history__list{
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+
+    &:after{
+      content          : "";
+      background-color : hsl(0,0,70);
+      height           : 100%;
+      width            : 1px;
+      position         : absolute;
+      top              : 0;
+      left             : 50%;
+    }
+
+    .history__element{
+      width          : 55%;
+      display        : flex;
+      justify-content: space-between;
+      margin-top     : 1rem;
+      align-self     : flex-end;
+
+      .history-circle{
+        width       : 20%;
+        text-align  : center;
+        padding-right: 10px;
+
+        .history__circle{
+          width           : 60px;
+          height          : 60px;
+          background-color: hsl(0,0,70);
+          display         : inline-block;
+          border-radius   : 50%;
+          position        : relative;
+
+          &:before{
+            content         : "";
+            width           : 40px;
+            height          : 40px;
+            background-color: $whiteBG;
+            border-radius   : 50%;
+            display         : inline-block;
+            position        : absolute;
+            top             : 10px;
+            left            : 10px;
+          }
+
+          &:after{
+            content         : "";
+            width           : 20px;
+            height          : 20px;
+            background-color: hsl(0,0,70);
+            border-radius   : 50%;
+            display         : inline-block;
+            position        : absolute;
+            top             : 20px;
+            left            : 20px;
+          }
+        }
+      }
+
+      .history-circle:not(.history-odd){
+        order : 1;
+        padding-left : 20px;
+      }
+
+      .history-item{
+        width      : 80%;
+        box-shadow : 0 0 7px hsla(0,0,0,0.4);
+
+        .history-title{
+          background-color: $verde;
+          position        : relative;
+
+          &:after{
+            content       : "";
+            border-top    : 10px solid transparent;
+            border-right  : 10px solid $verde;
+            border-bottom : 10px solid transparent;
+            border-left   : 10px solid transparent;
+            display       : inline-block;
+            position      : absolute;
+            top           : 19px;
+            left         : -20px;
+          }
+
+          .history__h3{
+            color      : white;
+            font-weight: 300;
+            padding    : 1rem;
+          }
+        }
+
+        .history-title:not(.history-odd){
+          &:after{
+            border-right : 10px solid transparent;
+            border-left  : 10px solid $verde;
+            left         : 100%;
+          }
+        }
+
+        .history__img{
+          max-width: 100%;
+        }
+
+        .history__text{
+          padding : 1rem;
+          line-height: 1.5em;
+        }
+      }
+
+      .history-item:not(.history-odd){
+        order : 0;
+      }
+
+    }
+
+    .history__element:not(.history-odd){
+      align-self: flex-start;
+    }
+  }
+}

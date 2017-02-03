@@ -1,0 +1,28 @@
+.quote{
+  background-color: $grisBG;
+
+  .quote-cont{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
+    .quote-icon{
+      color : $verde;
+      font-size: 4rem;
+    }
+
+    .quote__text{
+      color : hsl(0,0,70);
+      font-size: 2rem;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
+    .quote__author{
+      color : $verde;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 2rem;
+    }
+  }
+}

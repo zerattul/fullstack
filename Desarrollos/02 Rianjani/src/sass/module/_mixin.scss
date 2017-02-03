@@ -1,0 +1,45 @@
+@mixin btn($btn-color, $btn-fz){
+  color           : $whiteBG;
+  background-color: $btn-color;
+  border          : 1px solid $btn-color;
+  font-size       : $btn-fz;
+  padding         : 1rem 2rem;
+  border-radius   : 5px;
+  transition      : all 0.3s ease;
+  cursor          : pointer;
+  &:hover {
+    background-color: darken($btn-color, 10);
+  }
+}
+
+@mixin titles($color){
+  .m__h2 {
+    color         : $color;
+    font-weight   : 300;
+    font-size     : 4em;
+    padding-bottom: 1.5rem;
+  }
+
+  .m__h3 {
+    color      : $color;
+    font-weight: 300;
+    font-size  : 1.5em;
+    text-align : center;
+  }
+
+  .m__lineBottom {
+    color        : $color;
+    border-bottom: 1px solid $color;
+    display      : inline-block;
+    width        : 80px;
+    padding      : 2.5rem 0 0;
+  }
+}
+
+@mixin textSize($txtColor, $txt-fz){
+  color        : $txtColor;
+  font-size    : $txt-fz;
+  line-height  : 1.5em;
+  margin-bottom: 1.2rem;
+  padding-top  : 0.5rem;
+}

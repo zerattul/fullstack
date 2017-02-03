@@ -1,0 +1,30 @@
+// ::::::::::: Facts :::::::::::: //
+
+.factsList{
+  display         : flex;
+  justify-content : space-between;
+  width           : 100%;
+
+  &-item{
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    align-items     : center;
+
+    &__icon{
+      color     : $verde;
+      font-size : 5em;
+    }
+
+    &__count{
+      font-size   : 6em;
+      color       : #f2f2f2;
+      padding     : 1rem 0;
+    }
+
+    &__word{
+      color       : $verde;
+      font-size   : 2em;
+    }
+  }
+}

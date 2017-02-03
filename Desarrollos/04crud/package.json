@@ -1,0 +1,23 @@
+{
+  "name": "04crud",
+  "version": "1.0.0",
+  "description": "Crud ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor app.js"
+  },
+  "author": "salvador carreon",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.12.0",
+    "pug": "^0.1.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

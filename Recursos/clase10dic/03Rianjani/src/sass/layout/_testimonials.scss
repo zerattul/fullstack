@@ -1,0 +1,61 @@
+// ::::::::::: testimonials :::::::::::: //
+.testimonials{
+  display         : flex;
+  justify-content : space-between;
+
+  &-item{
+    width : 31%;
+
+    &-comment{
+      background-color : $verde;
+      padding          : 1rem;
+      color            : $whiteBG;
+      position         : relative;
+
+      &:after{
+        content       : "";
+        border-top    : 12px solid $verde;
+        border-right  : 12px solid transparent;
+        border-bottom : 12px solid transparent;
+        border-left   : 12px solid $verde;
+        display       : inline-block;
+        position      : absolute;
+        top           : 100%;
+        left          : 20%;
+      }
+
+      &__title{
+        font-size      : 1.2rem;
+        font-weight    : bold;
+        padding-bottom : 1rem;
+      }
+    }
+
+    &-user{
+      display    : flex;
+      margin-top : 2.1rem;
+
+      &-img{
+        margin-right : 1.5rem;
+
+        img{
+          border-radius : 50%;
+          border        : 3px solid $whiteBG;
+        }
+      }
+
+      &-data{
+        color      : $whiteBG;
+        margin-top : 1rem;
+
+        &__user{
+          font-weight : bold;
+        }
+
+        &__range{
+          font-style : italic;
+        }
+      }
+    }
+  }
+}

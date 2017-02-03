@@ -1,0 +1,18 @@
+// Tranfroma valores en pixeles a em
+
+@function em($el,$context:16px) {
+  @if type_of($el) == number and unit($el) == 'px' {
+    @return ($el / $context) * 1em;
+  } @else {
+    @error 'La función em() requiere una unidad de pixeles como primer argumento (el segundo es opcional)'
+  }
+}
+
+// Tranfroma valores en pixeles a rem
+@function rem($el) {
+  @if type_of($el) == number and unit($el) == 'px' {
+    @return ($el / 16px) * 1rem;
+  } @else {
+    @error 'La funcion rem() requiere una unidad de pixeles como argumento';
+  }
+}

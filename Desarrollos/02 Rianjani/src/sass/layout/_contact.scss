@@ -1,0 +1,184 @@
+.contact{
+  background-color         : $grisBG;
+  color                    : hsl(0,0,50);
+  padding-bottom           : 3rem;
+
+  .contact-cont{
+    margin-top             : 4rem;
+    display                : flex;
+    flex-direction         : column;
+    align-items            : center;
+
+    .contact-form{
+      display              : flex;
+      justify-content      : space-between;
+      width                : 80%;
+
+      .contact-formCol{
+        width              : 48%;
+        display            : flex;
+        flex-direction     : column;
+
+        .contact__label, .contact__input, .contact__textarea{
+          font-weight      : 300;
+          letter-spacing   : 3px;
+        }
+
+        .contact__input, .contact__textarea{
+          font-size        : 1rem;
+          padding          : 1rem;
+          color            : hsl(0,0,80);
+        }
+
+        .contact__label{
+          padding-bottom   : 0.5rem;
+        }
+
+        .contact__input{
+          margin-bottom    : 2rem;
+        }
+
+        .contact__textarea{
+           resize          : none;
+           height          : 165px;
+        }
+
+        .contact__btn{
+          background-color : $verde;
+          border           : 0;
+          color            : $whiteBG;
+          padding          : 1rem;
+          margin-top       : 3.35rem;
+          font-size        : 1.2rem;
+        }
+      }
+    }
+
+    .contact-circel{
+      margin-top           : 2rem;
+
+      .contact__circle{
+        background-color   : $verde;
+        width              : 120px;
+        height             : 120px;
+        border-radius      : 50%;
+        color              : $whiteBG;
+        display            : inline-block;
+        text-align         : center;
+        line-height        : 120px;
+        font-size          : 3rem;
+        font-weight        : 300;
+      }
+    }
+
+    .contact-social{
+      margin-top           : 4rem;
+
+      .contact__title{
+        font-weight        : 300;
+      }
+
+      .contact__list{
+        display            : flex;
+        justify-content    : space-between;
+        margin-top         : 2rem;
+
+        .contact-icon{
+          font-size        : 1.2rem;
+          border           : 1px solid hsl(0,0,80);
+          text-align       : center;
+          line-height      : 50px;
+          border-radius    : 50%;
+          display          : inline-block;
+          width            : 50px;
+          height           : 50px;
+        }
+      }
+    }
+  }
+
+  .contact-map{
+    width                  : 100%;
+    height                 : 400px;
+  }
+
+  .contact-footer{
+    display                : flex;
+    justify-content        : space-between;
+    margin-top             : 4rem;
+
+    .contact-col{
+      width                : 30%;
+      font-weight          : 300;
+
+      .contact__h5{
+        margin-bottom      : 1rem;
+        font-weight        : 300;
+        color              : hsl(0,0,85);
+        letter-spacing     : 4px;
+      }
+
+      .contact__text{
+        line-height        : 1.5em;
+      }
+
+      .contact-formFooter{
+        display            : flex;
+        flex-direction     : column;
+        margin-top         : 1rem;
+
+        label{
+          padding-bottom: 0.5rem;
+        }
+
+        input{
+          background-color: $grisBG;
+          color : hsl(0,0,30);
+          border : 1px solid hsl(0,0,50);
+          padding: 0.6rem 1rem;
+          margin-bottom: 1rem;
+        }
+
+        button{
+          background-color: $verde;
+          color : $whiteBG;
+          width : 120px;
+          border : none;
+          padding: 0.6rem 1rem;
+          font-size: 1.1rem;
+        }
+      }
+
+      .contact__listInfo{
+        margin-top         : 1rem;
+
+        .contact__listElement{
+          display          : flex;
+          align-items      : center;
+          padding-bottom   : 1rem;
+
+          .info-conect{
+            margin-right   : 1rem;
+          }
+        }
+      }
+
+      .contact__list{
+        display            : flex;
+        justify-content    : space-between;
+        margin-top         : 1rem;
+
+        .contact-icon{
+          font-size        : 1.1rem;
+          border           : 1px solid hsl(0,0,80);
+          text-align       : center;
+          line-height      : 45px;
+          border-radius    : 50%;
+          display          : inline-block;
+          width            : 45px;
+          height           : 45px;
+        }
+      }
+    }
+  }
+}

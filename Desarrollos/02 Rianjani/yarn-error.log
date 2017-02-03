@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/salvadorcarreon/Library/android/sdk/tools:/Users/salvadorcarreon/Library/android/sdk/platform-tools
+
+Yarn version: 
+  0.16.0
+
+Node version: 
+  5.1.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "archivobase",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Salvador",
+    "license": "MIT",
+    "dependencies": {
+      "animate.css": "^3.5.2",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/salvadorcarreon/Documents/Proyectos/23 Diplomado Tec/001Gulp/package.json: Unexpected token }
+      at Object.parse (native)
+      at /usr/local/lib/node_modules/yarn/lib/util/fs.js:271:57
+      at next (native)
+      at step (/usr/local/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:17:30)
+      at /usr/local/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:28:20
+      at run (/usr/local/lib/node_modules/yarn/node_modules/core-js/library/modules/es6.promise.js:87:22)
+      at /usr/local/lib/node_modules/yarn/node_modules/core-js/library/modules/es6.promise.js:100:28
+      at flush (/usr/local/lib/node_modules/yarn/node_modules/core-js/library/modules/_microtask.js:18:9)
+      at doNTCallback0 (node.js:430:9)
+      at process._tickCallback (node.js:359:13)

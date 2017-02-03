@@ -1,0 +1,183 @@
+// ::::::::::: contact :::::::::::: //
+.contact{
+  width          : 100%;
+  display        : flex;
+  flex-direction : column;
+  color          : $fontBLK;
+
+  &-col{
+    display         : flex;
+    justify-content : space-between;
+
+    &-form{
+      width          : 48%;
+      display        : flex;
+      flex-direction : column;
+
+      label{
+        font-size      : 1.3rem;
+        font-weight    : $light;
+        letter-spacing : 3px;
+        padding-bottom : 0.7rem;
+      }
+
+      input, textarea{
+        font-size      : 1.2rem;
+        color          : lighten($fontBLK, 20);
+        letter-spacing : 2px;
+        font-weight    : $light;
+        padding        : 0.7rem 1rem;
+        margin-bottom  : 1.5rem;
+      }
+
+      textarea{
+        resize : none;
+        height : 10rem;
+      }
+
+      button {
+        background-color : $verde;
+        border           : none;
+        color            : $whiteBG;
+        font-size        : 1.3rem;
+        padding          : 0.7rem 1rem;
+        margin-top       : 1.6rem;
+        border           : 1px solid $verde;
+        transition       : all 200ms ease;
+        cursor           : pointer;
+
+        &:hover{
+          background-color: darken($verde, 10);
+        }
+      }
+    }
+  }
+
+  &-social{
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    margin-top     : 4rem;
+
+    &__span{
+      background-color : $verde;
+      color            : $whiteBG;
+      font-size        : 3rem;
+      padding          : 2rem;
+      border-radius    : 50%;
+      display          : inline-block;
+    }
+
+    &__text{
+      font-size   : 2rem;
+      padding     : 3rem 0 2rem;
+      font-weight : $light;
+    }
+
+    &-list{
+      display         : flex;
+      justify-content : space-between;
+      width           : 500px;
+
+      &-item{
+        width      : calc(500px / 6);
+        text-align : center;
+
+        &__icon{
+          border        : 1px solid $fontBLK;
+          font-size     : 2rem;
+          height        : 60px;
+          width         : 60px;
+          border-radius : 50%;
+          display       : inline-block;
+          line-height   : 65px;
+        }
+      }
+    }
+  }
+}
+
+.map, #map{
+  width: 100%;
+  height: 400px;
+}
+
+
+.contact-foot{
+  width : 32%;
+  display : flex;
+  flex-direction: column;
+
+  &__title{
+    color : $whiteBG;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: $light;
+    letter-spacing: 3px;
+  }
+
+  &__text{
+    color : $fontBLK;
+    padding : 1rem 1rem 1rem 0;
+  }
+
+  &-list{
+    color : $fontBLK;
+
+    &-item{
+      padding-bottom: 1rem;
+
+      &__text{
+        padding: 1rem;
+      }
+    }
+  }
+
+  &-social{
+    display : flex;
+    justify-content: space-between;
+    width : 320px;
+    color : $fontBLK;
+    margin-top: 1rem;
+
+    &-item{
+      width : calc(320px / 6);
+      text-align: center;
+
+      &__icon{
+        border : 1px solid $fontBLK;
+        font-size: 1rem;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display : inline-block;
+        line-height: 45px;
+      }
+    }
+  }
+
+  &-form{
+    display : flex;
+    flex-direction : column;
+
+    label{
+      color : $fontBLK;
+      padding-bottom: 0.5rem;
+    }
+
+    input{
+      margin-bottom: 1.5rem;
+      padding : 0.7rem 1rem;
+      border : 1px solid $fontBLK;
+      background-color: $grisBG;
+    }
+
+    button{
+      background-color: $verde;
+      border : 0;
+      color : $whiteBG;
+      padding : 0.7rem 1rem;
+      width : 100px;
+    }
+  }
+}

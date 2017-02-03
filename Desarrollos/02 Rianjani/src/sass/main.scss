@@ -1,0 +1,70 @@
+// Variables para los pesos de las fuentes
+  $light  : 300;
+  $normal : 400;
+  $bold   : 700;
+
+// Paleta de colores
+  $grisBG  : #141414;
+  $verde   : #1abc9c;
+  $whiteBG : #f2f2f2;
+  $fontBLK : #b7ada4;
+
+// Estilos Base
+  $body--bg    : #f2f2f2;
+  $body--fz    : 16px;
+  $body--ff    : 'Open Sans', sans-serif;
+  $body--color : #292929;
+
+// Tamaños de los encabezados
+  $h1 : 3.5em;
+  $h2 : 3em;
+  $h3 : 2.5em;
+  $h4 : 2em;
+  $h5 : 1.5em;
+  $h6 : 1em;
+
+// Estilos de enlaces
+  $link--color : initial;
+
+// Estilos parrafos
+  $p--fz  : 1em;
+  $p--lh  : 1.5em;
+
+
+// Importar Base
+  @import "base/_reset";
+  @import "base/_base";
+
+// Importar Grid
+//  @import "grid/variables";
+
+// Importar Layout
+  @import "layout/_intro";
+  @import "layout/_nav";
+  @import "layout/_who";
+  @import "layout/_facts";
+  @import "layout/_why";
+  @import "layout/_skill";
+  @import "layout/_servicies";
+  @import "layout/_quote";
+  @import "layout/_work";
+  @import "layout/_social";
+  @import "layout/_team";
+  @import "layout/_testimonial";
+  @import "layout/_pricing";
+  @import "layout/_coming";
+  @import "layout/_history";
+  @import "layout/_contact";
+  @import "layout/_map";
+  @import "layout/_footer";
+
+// Importar Modules
+  @import "module/_module";
+
+// Importar State
+  @import "state/_state";
+
+
+// TODO 1.- Crear mixin para los fondos de las secciones
+// TODO 2.- Cambiar todas las imagaens por la etiueta picture
+// TODO 4.- Hacer una mixxin para los iconos social de la seccion de cntacto

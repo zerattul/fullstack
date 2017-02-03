@@ -1,0 +1,32 @@
+.why-cont{
+  margin-top: 4em;
+
+  .why__list{
+    display : flex;
+    flex-wrap: wrap;
+
+    .why__element{
+      width : 33%;
+      padding: 0 1em 3em;
+      display : flex;
+
+      &:hover{
+        cursor : pointer;
+      }
+
+
+      .why__iconCont{
+        margin-right: 1rem;
+
+        .why__icon{
+          background-color: $verde;
+          color : white;
+          font-size: 1.5rem;
+          padding : 0.5rem 0.5rem  0.2rem 0.5rem;
+          border-radius: 5px;
+          display : inline-block;
+        }
+      }
+    }
+  }
+}

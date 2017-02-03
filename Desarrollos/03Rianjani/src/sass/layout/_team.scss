@@ -1,0 +1,9 @@
+// ::::::::::: team :::::::::::: //
+.team{
+  display         : flex;
+  justify-content : space-between;
+
+  &-item{
+    width : 24%;
+  }
+}

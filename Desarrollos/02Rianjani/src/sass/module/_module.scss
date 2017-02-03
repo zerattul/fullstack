@@ -1,0 +1,38 @@
+@import "mixins";
+
+.m-section{
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+}
+
+.m-center{
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  width          : 1100px;
+  max-width      : 1440px;
+}
+
+.m-wrapper{
+  margin: 5em 0;
+}
+
+.m--titleCont {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.m__h4{
+  letter-spacing: 5px;
+  font-size     : 2rem;
+  font-weight   : 300;
+  margin-bottom : 1.5rem;
+}
+
+//Llamadas mixin
+.mx-btnIntro         { @include btn($verde, 1.2em  )}
+.mx-btn              { @include btn($verde, 1em    )}
+.mx-titleBlack       { @include titles(hsl(0,0,20) )}
+.mx-titleWhite       { @include titles(hsl(0,0,50))          }

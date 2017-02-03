@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+  title Rianjani
+  // build:css css/estilos.min.css
+  each css in files.CSS
+    link(rel="stylesheet", href=`${css}`)
+  // endbuild
+body
+  h1 Hola Mundo
+  p error resuelto
+
+  // build:js js/main.min.js
+  each js in files.JS
+    script(src=`${js}`)
+  // endbuild

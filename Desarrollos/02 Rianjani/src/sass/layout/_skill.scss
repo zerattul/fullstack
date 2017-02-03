@@ -1,0 +1,65 @@
+.skill{
+  background-color: $grisBG;
+
+  .skill-cont{
+    margin-top: 4em;
+    display : flex;
+
+    .skill-text{
+      width : 50%;
+    }
+
+    .skill-bar{
+      width : 50%;
+      padding : 0rem 1rem;
+
+      .skill-chart{
+        display : flex;
+        flex-direction: column;
+        width : 100%;
+
+        .skill__charBar{
+          background-color: $verde;
+          margin-bottom: 0.5rem;
+
+          .skill__textBar{
+            color : white;
+            padding : 1rem;
+          }
+        }
+      }
+
+      .skill-barLine{
+        display : flex;
+        border-top : 1px solid hsl(0,0,90);
+        margin-top: 1rem;
+
+        .skill__legend{
+          width : 25%;
+          position : relative;
+
+          &:before{
+            content : "";
+            border-left: 1px solid hsl(0,0,90);
+            width : 1px;
+            height: 10px;
+            position : absolute;
+            top : -10px;
+            left : 0;
+          }
+          &:last-child{
+            &:after{
+              content : "";
+              border-right: 1px solid hsl(0,0,90);
+              width : 1px;
+              height: 10px;
+              position : absolute;
+              top : -10px;
+              right : 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

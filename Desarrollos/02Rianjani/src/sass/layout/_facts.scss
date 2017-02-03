@@ -1,0 +1,37 @@
+.facts{
+  background-color: $grisBG;
+
+  .facts-icons{
+    margin-top: 5em;
+
+    .facts__list{
+      display        : flex;
+      justify-content: space-between;
+
+      .facts__li{
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        align-items    : center;
+
+        .facts__icon{
+          color : $verde;
+          font-size: 5em;
+        }
+
+        .facts__count{
+          font-size: 6em;
+          color : #f2f2f2;
+          padding: 1rem 0;
+          font-weight: 300;
+        }
+
+        .facts__word{
+          color : $verde;
+          font-size: 2em;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

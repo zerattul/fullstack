@@ -1,0 +1,28 @@
+// ::::::::::: work :::::::::::: //
+.work{
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+
+  &-menu{
+    display         : flex;
+    justify-content : space-between;
+    width           : 440px;
+    margin-bottom   : 3rem;
+
+    &-item{
+      background-color: $verde;
+      padding : 0.5rem 1rem;
+      transition : all 250ms ease;
+      cursor : pointer;
+
+      &:hover{
+        background-color: darken($verde, 10);
+      }
+
+      &__link{
+        color : $whiteBG;
+      }
+    }
+  }
+}

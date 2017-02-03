@@ -1,0 +1,47 @@
+// ::::::::::: Nav :::::::::::: //
+
+.nav{
+  background-color : lighten($grisBG, 5);
+  display          : flex;
+  justify-content  : center;
+  height           : 70px;
+  align-items      : center;
+  z-index          : 20 !important;
+
+  &-logo {
+    width : 20%;
+
+    &__logo {
+      color          : $whiteBG;
+      font-size      : 2em;
+      text-transform : uppercase;
+      letter-spacing : 4px;
+    }
+  }
+
+
+
+  &-list {
+    display         : flex;
+    justify-content : space-between;
+
+    &__element {
+      text-align : center;
+
+      a {
+        color      : $whiteBG;
+        transition : all 0.3s ease;
+        padding    : 1.7rem 1rem;
+        display    : inline-block;
+
+        &:hover{
+          color : $verde;
+        }
+      }
+    }
+
+    .active{
+      background-color : $verde;
+    }
+  }
+}

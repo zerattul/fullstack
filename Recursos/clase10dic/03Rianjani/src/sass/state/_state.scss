@@ -1,0 +1,21 @@
+// ::::::::::: State :::::::::::: //
+
+.s-p--white{
+  color : $whiteBG;
+}
+
+.s-p--darkWhite{
+  color : darken($whiteBG, 20);
+}
+
+.s-p--big{
+  font-size : 1.4rem;
+}
+
+.s-p--bold{
+  font-weight : bold;
+}
+
+.word--rigth{
+  text-align: right;
+}

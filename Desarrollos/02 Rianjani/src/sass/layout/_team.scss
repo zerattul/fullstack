@@ -1,0 +1,14 @@
+.team-cont{
+  margin-top     : 4rem;
+  display        : flex;
+  justify-content: space-between;
+
+  .team-contImg{
+    width : 25%;
+
+    .team__img{
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+}

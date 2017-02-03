@@ -1,0 +1,53 @@
+// ::::::::::: Module :::::::::::: //
+@import "mixins";
+
+.m-center{
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  width           : 1100px;
+  max-width       : 1440px;
+}
+
+.m-wrapper{
+  display        : flex;
+  width          : 100%;
+  align-items    : center;
+  flex-direction : column;
+  margin-top     : 4rem;
+}
+
+.m-section-cont{
+  margin-top      : 3rem;
+  display         : flex;
+  padding-bottom  : 5rem;
+  width           : 100%;
+  justify-content : center;
+}
+
+.m--titleCont {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+}
+
+.m__h4{
+  letter-spacing : 5px;
+  font-size      : 2rem;
+  font-weight    : $light;
+  margin-bottom  : 1.5rem;
+}
+
+.m__p{
+  padding-bottom : 1rem;
+}
+
+//Llamadas mixin
+.mx-section     { @include section($whiteBG)   }
+.mx-sectionWth  { @include section($grisBG)    }
+.mx-btnIntro    { @include btn($verde, 1.2em)  }
+.mx-btn         { @include btn($verde, 1em)    }
+.mx-titleBlack  { @include titles($grisSec) }
+.mx-titleWhite  { @include titles($fontBLK) }
+
+.work-portfolio { @include porfolio(".work-portfolio-item", 3)}

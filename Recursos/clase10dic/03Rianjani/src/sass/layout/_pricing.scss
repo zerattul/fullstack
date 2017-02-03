@@ -1,0 +1,70 @@
+// ::::::::::: State :::::::::::: //
+.pricing{
+  display         : flex;
+  width           : 100%;
+  justify-content : center;
+
+  &-item{
+    width      : 25%;
+    text-align : center;
+    border-top : 6px solid $verde;
+    box-shadow: -5px 0 15px -5px hsla(0,0,10,0.2);
+
+    &-top{
+      background-color : $grisSec;
+      color            : darken($whiteBG, 20);
+      padding          : 2rem 0;
+      border-bottom    : 4px solid $verde;
+
+      &__title{
+        font-weight    : $light;
+        letter-spacing : 3px;
+        padding-bottom : 2rem;
+      }
+
+      &-price{
+        display         : flex;
+        justify-content : center;
+        color           : lighten($whiteBG, 50);
+
+        &__dollar{
+          font-size  : 0.9em;
+          align-self : flex-start;
+        }
+
+        &__number{
+          font-size : 5rem;
+        }
+
+        &__date{
+          font-size      : 0.9rem;
+          align-self     : flex-end;
+          padding-bottom : 0.5rem;
+        }
+      }
+
+      &__text{
+        color       : $fontBLK;
+        font-style  : italic;
+        padding-top : 1rem;
+      }
+    }
+
+    &-dataCont{
+      padding : 1.5rem 0;
+    }
+
+    &-dataCont:nth-of-type(odd){
+      background-color : darken(white, 10);
+    }
+
+    &-dataCont:last-of-type{
+      background-color : $verde;
+      color            : $whiteBG;
+    }
+  }
+
+  &-item:last-of-type{
+    box-shadow: 0 0 15px hsla(0,0,0,0.2);
+  }
+}

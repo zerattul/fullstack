@@ -1,0 +1,32 @@
+.services-cont{
+  margin-top: 4rem;
+
+  .servicies__list{
+    display : flex;
+
+    .servicies__element{
+      display       : flex;
+      flex-direction: column;
+      align-items   : center;
+      text-align    : center;
+
+      .servicies-icon{
+        font-size: 3.5em;
+        color : $verde;
+        border : 1px solid $verde;
+        border-radius: 50%;
+        width : 100px;
+        height: 100px;
+        padding-top: 25px;
+        margin-bottom: 2rem;
+      }
+
+      .servicie__line{
+        border-bottom: 1px solid $verde;
+        display      : inline-block;
+        width        : 70px;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// Variables para los pesos de las fuentes
+  $light  : 300;
+  $normal : 400;
+  $bold   : 700;
+
+// Paleta de colores
+  $grisBG  : hsla(0, 0%, 8%, 1);
+  $verde   : hsla(168, 76%, 42%, 1);
+  $whiteBG : hsla(0, 0%, 95%, 1);
+  $fontBLK : hsl(0,0,50);
+  $grisSec : hsl(0,0,20);
+
+// Estilos Base
+  $body--bg    : hsla(0, 0%, 95%, 1);
+  $body--fz    : 16px;
+  $body--ff    : 'Open Sans', sans-serif;
+  $body--color : hsla(0, 0%, 16%, 1);
+
+// Tamaños de los encabezados
+  $h1 : 3.5em;
+  $h2 : 3em;
+  $h3 : 2.5em;
+  $h4 : 2em;
+  $h5 : 1.5em;
+  $h6 : 1em;
+
+// Estilos imagenes
+  $mx-width : 100%;
+
+// Estilos de enlaces
+  $link--color : initial;
+
+// Estilos parrafos
+  $p--fz  : 1em;
+  $p--lh  : 1.5em;
+
+// Configuraciones Generales
+  $cssCore    : false;
+  $cssHelpers : true;
+  $devMode    : false;
+
+// Imporar Base
+  @import "base/_reset";
+  @import "base/_base";
+
+// Importar Layout
+  @import "grid/main-grid";
+
+// Importar Module
+  @import "module/_module";
+
+// Importar State
+  @import "state/_state";

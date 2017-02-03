@@ -1,0 +1,82 @@
+// ::::::::::: coming :::::::::::: //
+.coming{
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+
+  &-list{
+    display         : flex;
+    justify-content : space-between;
+    width           : 100%;
+
+    &-item{
+      width          : 23%;
+      display        : flex;
+      flex-direction : column;
+      color          : $verde;
+      align-items    : center;
+
+      &__number{
+        font-size : 5rem;
+      }
+
+      &__date{
+        color     : $fontBLK;
+        padding   : 1rem 0 1.5rem;
+        font-size : 1.8rem;
+      }
+
+      &__line{
+        border-bottom : 1px solid $verde;
+        width         : 150px;
+        display       : inline-block;
+      }
+    }
+  }
+
+  &-notify{
+    margin-top     : 5rem;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+
+    &-data{
+      margin-bottom : 4rem;
+      display       : flex;
+
+      &__email, &__btn{
+        font-size : 1.6rem;
+        padding   : 1rem;
+      }
+
+      &__email{
+        border        : 0;
+        outline       : none;
+        color         : $grisBG;
+        width         : 350px;
+        border-radius : 5px 0 0 5px;
+      }
+
+      &__btn{
+        background-color : $verde;
+        cursor           : pointer;
+        border           : 0;
+        color            : $whiteBG;
+        border-radius    : 0 5px 5px 0;
+        transition       : all 300ms ease;
+        border           : 1px solid $verde;
+
+        &:hover{
+          background-color : darken($verde, 10);
+        }
+      }
+    }
+
+    &__text{
+      color      : $fontBLK;
+      font-size  : 1.4rem;
+      text-align : center;
+      width      : 80%;
+    }
+  }
+}

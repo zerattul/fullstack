@@ -1,0 +1,20 @@
+// ::::::::::: Quote :::::::::::: //
+.quote{
+  text-align: center;
+
+  &__icon{
+    color    : $verde;
+    font-size: 4rem;
+  }
+
+  &__text{
+    font-weight    : $light;
+    line-height    : 1.5em;
+    padding-bottom : 1rem;
+  }
+
+  &__autor{
+    color     : $verde;
+    font-size : 2rem;
+  }
+}

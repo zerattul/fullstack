@@ -1,0 +1,88 @@
+// ::::::::::: work :::::::::::: //
+.work{
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  width          : 100%;
+
+  &-menu{
+    display         : flex;
+    justify-content : space-between;
+    width           : 440px;
+    margin-bottom   : 3rem;
+
+    &-item{
+      background-color: $verde;
+      padding : 0.5rem 1rem;
+      transition : all 250ms ease;
+      cursor : pointer;
+
+      &:hover{
+        background-color: darken($verde, 10);
+      }
+
+      &__link{
+        color : $whiteBG;
+      }
+    }
+  }
+
+  &-portfolio-item-cont{
+    width      : 100%;
+    height     : 100%;
+    text-align : center;
+    overflow   : hidden;
+
+    &:hover &-hover{
+      opacity : 1;
+    }
+
+    &:hover img{
+      transform : scale(1.2);
+    }
+
+    &-hover{
+      position         : absolute;
+      top              : 0;
+      left             : 0;
+      width            : 100%;
+      height           : 100%;
+      cursor           : pointer;
+      display          : flex;
+      justify-content  : center;
+      align-items      : center;
+      color            : $whiteBG;
+      flex-direction   : column;
+      background-color : hsla(0,0,10,0.7);
+      opacity          : 0;
+      transition       : all 300ms ease;
+      z-index          : 20;
+
+      &__img{
+        width           : 100%;
+        height          : 100%;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+        align-items     : center;
+      }
+
+      &__title, &__subtitle{
+        font-weight : 300;
+        font-size   : 1.5rem;
+        color       : hsl(0,0,79);
+      }
+
+      &__title{
+        padding-bottom : 1rem;
+      }
+    }
+
+    img{
+      max-width  : 100%;
+      transition : all 300ms ease;
+      display    : block;
+      position   : relative;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS diplomado_users;
+
+CREATE DATABASE IF NOT EXISTS diplomado_users;
+
+USE diplomado_users;
+
+CREATE TABLE user(
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	twitter VARCHAR(50) NOT NULL,
+	country VARCHAR(20) NOT NULL,
+	email VARCHAR(30) NOT NULL
+);

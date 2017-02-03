@@ -1,0 +1,29 @@
+// ::::::::::: social :::::::::::: //
+.social{
+  display         : flex;
+  width           : 100%;
+  justify-content : space-between;
+  margin-top      : 1rem;
+
+  &-item{
+    display        : flex;
+    flex-direction : column;
+    text-align     : center;
+    color          : $fontBLK;
+    transition     : all 300ms ease;
+    cursor         : pointer;
+
+    &:hover{
+      color : $verde;
+    }
+
+    &__icon{
+      font-size      : 4.5rem;
+      padding-bottom : 1rem;
+    }
+
+    &__word{
+      font-size : 1.5rem;
+    }
+  }
+}

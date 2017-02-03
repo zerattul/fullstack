@@ -1,0 +1,22 @@
+.who--cont{
+  margin-top: 3rem;
+  display   : flex;
+  z-index: 10;
+
+  .who--wrap{
+    width : 50%;
+    z-index: 10;
+
+    img{
+      max-width: 100%;
+      z-index: -10;
+    }
+  }
+  .who--text{
+    padding-left: 2rem;
+
+    .btn-gen{
+      margin-top: 2rem;
+    }
+  }
+}

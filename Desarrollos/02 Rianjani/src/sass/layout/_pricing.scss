@@ -1,0 +1,75 @@
+.pricing-cont{
+  margin-top: 4rem;
+
+  .pricing-wrap{
+    display        : flex;
+    justify-content: space-between;
+
+    .pricing-bx{
+      border-top     : 6px solid $verde;
+      width     : 25%;
+      box-shadow: -5px 0 15px -5px hsla(0,0,10,0.2);
+
+      .pricing__list{
+        width : 100%;
+
+        .pricing__top{
+          background-color: $grisBG;
+          text-align      : center;
+          color           : $whiteBG;
+          border-bottom: 3px solid $verde;
+
+          .pricing__title{
+            padding       : 2rem 0 1rem;
+            font-size     : 1.5rem;
+            font-weight   : 300;
+            letter-spacing: 5px;
+          }
+
+          .pricing-price{
+            display        : flex;
+            justify-content: center;
+            padding-bottom : 2rem;
+            padding-top    : 1rem;
+
+            .pricing__sign{
+              font-size  : 1.3rem;
+              font-weight: 300;
+            }
+
+            .pricing__number{
+              font-size  : 7rem;
+              font-weight: 300;
+            }
+
+            .pricing__date{
+              align-self    : flex-end;
+              padding-bottom: 0.5rem;
+            }
+          }
+        }
+
+        .pricing__even, .pricing__odd, .pricing__footer{
+          text-align: center;
+
+          .pricing__text{
+            padding: 1.5rem;
+          }
+        }
+
+        .pricing__even{
+          background-color: hsl(0,0,90);
+        }
+
+        .pricing__footer{
+          background-color: $verde;
+          color           : $whiteBG;
+        }
+      }
+    }
+
+    .bx{
+      box-shadow: 0 0 15px hsla(0,0,0,0.2);
+    }
+  }
+}

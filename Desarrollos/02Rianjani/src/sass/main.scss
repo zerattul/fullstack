@@ -1,0 +1,45 @@
+// Variables para los pesos de las fuentes
+  $light  : 300;
+  $normal : 400;
+  $bold   : 700;
+
+// Paleta de colores
+  $grisBG  : hsla(0, 0%, 8%, 1);
+  $verde   : hsla(168, 76%, 42%, 1);
+  $whiteBG : hsla(0, 0%, 95%, 1);
+  $fontBLK : hsla(28, 12%, 68%, 1);
+
+// Estilos Base
+  $body--bg    : hsla(0, 0%, 95%, 1);
+  $body--fz    : 16px;
+  $body--ff    : 'Open Sans', sans-serif;
+  $body--color : hsla(0, 0%, 16%, 1);
+
+// Tamaños de los encabezados
+  $h1 : 3.5em;
+  $h2 : 3em;
+  $h3 : 2.5em;
+  $h4 : 2em;
+  $h5 : 1.5em;
+  $h6 : 1em;
+
+// Estilos de enlaces
+  $link--color : initial;
+
+// Estilos parrafos
+  $p--fz  : 1em;
+  $p--lh  : 1.5em;
+
+// Imporar Base
+  @import "base/_reset";
+  @import "base/_base";
+
+// Importar Layout
+  @import "layout/_intro";
+  @import "layout/_nav";
+  @import "layout/_who";
+  @import "layout/_facts";
+  @import "layout/_why";
+
+// Importar Module
+  @import "module/_module";

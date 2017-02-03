@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.head= title
+    article.item
+      form.form(method="post", action="/actualizar/" + data[0].id)
+        input(type="hidden" name="_method" value="PUT")
+        input(type="hidden", name="id", value=data[0].id)
+        fieldset
+          div
+            input(type="text", name="name", value=data[0].name, require)
+          div
+            input(type="text", name="twitter", value=data[0].twitter, require)
+          div
+            input(type="text", name="country", value=data[0].country, require)
+          div
+            input(type="email", name="email", value=data[0].email, require)
+          div
+            input.button.add(type="submit", value="Editar")
+      a.button.show(href="/") Inicio

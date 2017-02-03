@@ -1,0 +1,51 @@
+.intro{
+  background-color: $grisBG;
+  height: 100vh;
+  display : flex;
+  justify-content: center;
+
+  .introWrapper{
+    text-align: center;
+    display : flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 35%;
+
+    .intro__h1, .intro-text{
+      color : $whiteBG;
+    }
+
+    .intro-logo, .intro-text, .intro-btn{
+      display : flex;
+    }
+
+    .intro-logo{
+      justify-content: center;
+
+      .intro__h1{
+        border        : 1px solid $whiteBG;
+        font-size     : 5.5em;
+        padding       : 1rem 2rem;
+        border-radius : 0px 15px;
+        display : inline-block;
+      }
+    }
+
+    .intro-text{
+      flex-direction: column;
+
+      .intro__h2{
+        font-size: 3em;
+      }
+
+      .intro__text{
+        font-size: 1.5em;
+        padding-top: 1em;
+      }
+    }
+
+    .intro-btn{
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+mixin menu(url, name)
+  li.nav--element #[a(href=`${url}`) #{name}]
+
+mixin pic(name, ext)
+  picture
+    source(srcset=`img/webp/${name}.webp`, type="image/webp")
+    img(src=`img/${name}.${ext}`)
+
+<!DOCTYPE html>
+html(lang="es")
+head
+  meta(charset="UTF-8")
+  title Rianjani
+  each css in files.CSS
+    link(rel="stylesheet" href=`${css}`)
+
+body
+  section#intro.intro
+    .m-center
+      .introWrapper
+        div.intro-logo
+          h1.intro__h1 R
+
+        div.intro-text
+          h2.intro__h2 Clean, Awesome and Multi-Purpose.
+          p.intro__text Responsive Multi-Purpose Theme For Running Serious Business
+
+        div.intro-btn
+          a(href="#").mx-btnIntro Learn More
+
+
+  //- Nav
+  nav#nav.nav
+    div.m-center
+      div.nav--wrapper
+        div.nav-logo
+          a(href="#intro").nav__logo Rianjani
+
+        div.nav-listCont
+          ul.nav--list
+            +menu("#who", "ABOUT")
+            +menu("#skill", "SKILLS")
+            +menu("#servicies", "SERVICIES")
+            +menu("#work", "PORTAFOLIO")
+            +menu("#team", "TEAM")
+            +menu("#testimonial", "TESTIMONIALS")
+            +menu("#pricing", "PRICING")
+            +menu("#contact", "CONTACT")
+
+
+  //- Who
+  section#who.m-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.mx-titleBlack
+          h2.m__h2 Who We Are?
+          h3.m__h3 Some Things You Should Know About Us
+          span.m__lineBottom
+
+        div.who--cont
+          div.owl-carousel.owl-theme.owl-loaded.who--wrap.wow.bounceInUp
+            div.item
+              +pic("who-we-are-image-1", "jpg")
+          div.owl-dots
+            div.owl-dot.active
+              span
+            div.owl-dot
+              span
+
+          div.who--wrap.who--text.who--wrap.wow.bounceInUp
+            h4.m__h4 A Little About Our Past
+            p.m__text Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur. Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah dan Lombok Barat. Gunung Rinjani dengan titik tertinggi 3.726 m dpl, mendominasi sebagian besar pemandangan Pulau Lombok bagian utara. Di sebelah barat kerucut Rinjani terdapat kaldera dengan luas sekitar 3.500 m x 4.800 m, memanjang kearah timur dan barat.
+            div.btn-gen
+              a(href="#").mx-btn Read More
+
+
+  //- Facts
+  section#facts.m-section.facts
+    div.m-center
+      div.m-wrapper
+        .m--titleCont.mx-titleWhite
+          h2.m__h2 FUN FACTS
+          h3.m__h3 SOME OF THE COOL FACTS ABOUT US THAT WILL BLOW YOUR MIND
+          span.m__lineBottom
+        .facts-icons
+          ul.facts__list
+            li.facts__li
+              span.icon-thumbs-o-up.facts__icon
+              span.facts__count 2780
+              span.facts__word PROYECTS
+            li.facts__li
+              span.icon-smile-o.facts__icon
+              span.facts__count 487
+              span.facts__word CLIENTS
+            li.facts__li
+              span.icon-coffee.facts__icon
+              span.facts__count 13730
+              span.facts__word COFFEE
+            li.facts__li
+              span.icon-gift.facts__icon
+              span.facts__count 154
+              span.facts__word AWARDS
+
+
+  //- why
+  section#why.m-section
+    div.m-center
+      div.m-wrapper
+        div.m--titleCont.m-titleBlack
+          h2.m__h2 WHY CHOOSE US?
+          h3.m__h3 6 REASONS WHY WE ARE THE BEST
+          span.m__lineBottom
+
+        div.why-cont
+          ul.why__list
+            li.why__element
+              div.why__iconCont
+                span.icon-rocket.why__icon
+              div.why__text
+                h3.m__h4 SPEED
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.why__element
+              div.why__iconCont
+                span.icon-thumbs-o-up.why__icon
+              div.why__text
+                h3.m__h4 QUALITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.why__element
+              div.why__iconCont
+                span.icon-star.why__icon
+              div.why__text
+                h3.m__h4 EXPERTISE
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.why__element
+              div.why__iconCont
+                span.icon-shield.why__icon
+              div.why__text
+                h3.m__h4 SECURITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.why__element
+              div.why__iconCont
+                span.icon-paper-plane-o.why__icon
+              div.why__text
+                h3.m__h4 RELIABILITY
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+            li.why__element
+              div.why__iconCont
+                span.icon-life-ring.why__icon
+              div.why__text
+                h3.m__h4 PRICE
+                p.m__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+  each js in files.JS
+    script(src=`${js}`)

@@ -1,0 +1,32 @@
+extends layout.pug
+
+block content
+
+  section.container
+    h1.header= title
+    img(src="responsive.jpg")
+    article.item
+      div
+        a.button.add(href="/agregar") Agregar
+      if(data.length)
+        table.table
+          tr
+            th Nombre
+            th Twitter
+            th País
+            th Email
+            th
+            th
+          each contacto in data
+            tr
+              td #{contacto.name}
+              td #{contacto.twitter}
+              td #{contacto.country}
+              td #{contacto.email}
+              td
+                a.button.edit(href="/editar/" + contacto.id) Editar
+              td
+                form(method="post", action="/eliminar/" + contacto.id )
+                  input.button.delete(type="submit", value="Eliminar")
+      else
+        div.error No tienes datos para mostrar :`(

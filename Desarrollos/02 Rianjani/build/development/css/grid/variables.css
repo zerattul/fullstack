@@ -1,0 +1,371 @@
+.ed-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media all and (min-width: 0) {
+  .s5,
+  .ed-item.s5 {
+    width: 5%;
+  }
+  .s10,
+  .ed-item.s10 {
+    width: 10%;
+  }
+  .s15,
+  .ed-item.s15 {
+    width: 15%;
+  }
+  .s20,
+  .ed-item.s20 {
+    width: 20%;
+  }
+  .s25,
+  .ed-item.s25 {
+    width: 25%;
+  }
+  .s30,
+  .ed-item.s30 {
+    width: 30%;
+  }
+  .s35,
+  .ed-item.s35 {
+    width: 35%;
+  }
+  .s40,
+  .ed-item.s40 {
+    width: 40%;
+  }
+  .s45,
+  .ed-item.s45 {
+    width: 45%;
+  }
+  .s50,
+  .ed-item.s50 {
+    width: 50%;
+  }
+  .s55,
+  .ed-item.s55 {
+    width: 55%;
+  }
+  .s60,
+  .ed-item.s60 {
+    width: 60%;
+  }
+  .s65,
+  .ed-item.s65 {
+    width: 65%;
+  }
+  .s70,
+  .ed-item.s70 {
+    width: 70%;
+  }
+  .s75,
+  .ed-item.s75 {
+    width: 75%;
+  }
+  .s80,
+  .ed-item.s80 {
+    width: 80%;
+  }
+  .s85,
+  .ed-item.s85 {
+    width: 85%;
+  }
+  .s90,
+  .ed-item.s90 {
+    width: 90%;
+  }
+  .s95,
+  .ed-item.s95 {
+    width: 95%;
+  }
+  .s100,
+  .ed-item.s100 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .m5,
+  .ed-item.m5 {
+    width: 5%;
+  }
+  .m10,
+  .ed-item.m10 {
+    width: 10%;
+  }
+  .m15,
+  .ed-item.m15 {
+    width: 15%;
+  }
+  .m20,
+  .ed-item.m20 {
+    width: 20%;
+  }
+  .m25,
+  .ed-item.m25 {
+    width: 25%;
+  }
+  .m30,
+  .ed-item.m30 {
+    width: 30%;
+  }
+  .m35,
+  .ed-item.m35 {
+    width: 35%;
+  }
+  .m40,
+  .ed-item.m40 {
+    width: 40%;
+  }
+  .m45,
+  .ed-item.m45 {
+    width: 45%;
+  }
+  .m50,
+  .ed-item.m50 {
+    width: 50%;
+  }
+  .m55,
+  .ed-item.m55 {
+    width: 55%;
+  }
+  .m60,
+  .ed-item.m60 {
+    width: 60%;
+  }
+  .m65,
+  .ed-item.m65 {
+    width: 65%;
+  }
+  .m70,
+  .ed-item.m70 {
+    width: 70%;
+  }
+  .m75,
+  .ed-item.m75 {
+    width: 75%;
+  }
+  .m80,
+  .ed-item.m80 {
+    width: 80%;
+  }
+  .m85,
+  .ed-item.m85 {
+    width: 85%;
+  }
+  .m90,
+  .ed-item.m90 {
+    width: 90%;
+  }
+  .m95,
+  .ed-item.m95 {
+    width: 95%;
+  }
+  .m100,
+  .ed-item.m100 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .l5,
+  .ed-item.l5 {
+    width: 5%;
+  }
+  .l10,
+  .ed-item.l10 {
+    width: 10%;
+  }
+  .l15,
+  .ed-item.l15 {
+    width: 15%;
+  }
+  .l20,
+  .ed-item.l20 {
+    width: 20%;
+  }
+  .l25,
+  .ed-item.l25 {
+    width: 25%;
+  }
+  .l30,
+  .ed-item.l30 {
+    width: 30%;
+  }
+  .l35,
+  .ed-item.l35 {
+    width: 35%;
+  }
+  .l40,
+  .ed-item.l40 {
+    width: 40%;
+  }
+  .l45,
+  .ed-item.l45 {
+    width: 45%;
+  }
+  .l50,
+  .ed-item.l50 {
+    width: 50%;
+  }
+  .l55,
+  .ed-item.l55 {
+    width: 55%;
+  }
+  .l60,
+  .ed-item.l60 {
+    width: 60%;
+  }
+  .l65,
+  .ed-item.l65 {
+    width: 65%;
+  }
+  .l70,
+  .ed-item.l70 {
+    width: 70%;
+  }
+  .l75,
+  .ed-item.l75 {
+    width: 75%;
+  }
+  .l80,
+  .ed-item.l80 {
+    width: 80%;
+  }
+  .l85,
+  .ed-item.l85 {
+    width: 85%;
+  }
+  .l90,
+  .ed-item.l90 {
+    width: 90%;
+  }
+  .l95,
+  .ed-item.l95 {
+    width: 95%;
+  }
+  .l100,
+  .ed-item.l100 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .xl5,
+  .ed-item.xl5 {
+    width: 5%;
+  }
+  .xl10,
+  .ed-item.xl10 {
+    width: 10%;
+  }
+  .xl15,
+  .ed-item.xl15 {
+    width: 15%;
+  }
+  .xl20,
+  .ed-item.xl20 {
+    width: 20%;
+  }
+  .xl25,
+  .ed-item.xl25 {
+    width: 25%;
+  }
+  .xl30,
+  .ed-item.xl30 {
+    width: 30%;
+  }
+  .xl35,
+  .ed-item.xl35 {
+    width: 35%;
+  }
+  .xl40,
+  .ed-item.xl40 {
+    width: 40%;
+  }
+  .xl45,
+  .ed-item.xl45 {
+    width: 45%;
+  }
+  .xl50,
+  .ed-item.xl50 {
+    width: 50%;
+  }
+  .xl55,
+  .ed-item.xl55 {
+    width: 55%;
+  }
+  .xl60,
+  .ed-item.xl60 {
+    width: 60%;
+  }
+  .xl65,
+  .ed-item.xl65 {
+    width: 65%;
+  }
+  .xl70,
+  .ed-item.xl70 {
+    width: 70%;
+  }
+  .xl75,
+  .ed-item.xl75 {
+    width: 75%;
+  }
+  .xl80,
+  .ed-item.xl80 {
+    width: 80%;
+  }
+  .xl85,
+  .ed-item.xl85 {
+    width: 85%;
+  }
+  .xl90,
+  .ed-item.xl90 {
+    width: 90%;
+  }
+  .xl95,
+  .ed-item.xl95 {
+    width: 95%;
+  }
+  .xl100,
+  .ed-item.xl100 {
+    width: 100%;
+  }
+}
+
+body:before {
+  content: attr(class);
+  font-style: italic;
+  font-size: 0.75rem;
+  font-weight: normal;
+  z-index: 1;
+  right: 0;
+  position: absolute;
+  display: table;
+  width: 100%;
+  padding: 0 0.3125em;
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+
+body {
+  margin: 0 !important;
+  position: relative;
+  top: 66px;
+}
+
+body:before {
+  position: fixed;
+  background: steelblue;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 36px;
+  height: 36px;
+}

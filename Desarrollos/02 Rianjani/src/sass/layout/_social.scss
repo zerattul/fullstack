@@ -1,0 +1,33 @@
+.social{
+  background-color: $grisBG;
+
+  .social-cont{
+    margin-top     : 4rem;
+    display        : flex;
+    justify-content: center;
+
+    .social__list{
+      display        : flex;
+      justify-content: space-between;
+      width          : 80%;
+
+      .social__element{
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+
+        .social-icon{
+          font-size      : 4em;
+          color          : $fontBLK;
+          padding-bottom : 1rem;
+        }
+
+        .social__word{
+          font-size  : 1.2rem;
+          color      : $fontBLK;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

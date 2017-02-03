@@ -1,0 +1,57 @@
+// ::::::::::: Skill :::::::::::: //
+
+.skillCol{
+  width   : 50%;
+  padding : 0.5rem;
+
+  &-barsCont{
+    display        : flex;
+    flex-direction : column;
+
+    &-item{
+      background-color : $verde;
+      padding          : 1.2rem;
+      margin-bottom    : 0.5rem;
+      width            : 100%;
+
+      &__text{
+        color : $whiteBG;
+      }
+    }
+  }
+
+  &-stats{
+    display    : flex;
+    margin-top : 1rem;
+    border-top : 1px solid $whiteBG;
+
+    &-item{
+      width : 25%;
+
+      &__word{
+        color     : $whiteBG;
+        font-size : 0.85rem;
+      }
+    }
+
+    .leftBar:before{
+      content          : "";
+      width            : 1px;
+      height           : 10px;
+      display          : block;
+      background-color : $whiteBG;
+      position         : relative;
+      bottom           : 10px;
+    }
+    .rigthBar:before{
+      content          : "";
+      width            : 1px;
+      height           : 10px;
+      display          : block;
+      background-color : $whiteBG;
+      position         : relative;
+      bottom           : 10px;
+      left             : 100%;
+    }
+  }
+}
