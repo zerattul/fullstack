@@ -1,0 +1,56 @@
+// Aplicando los estilos de style.scss
+body{
+  background-color : $body--bg;
+  color            : $body--color;
+  font-family      : $body--ff;
+  font-size        : $body--fz;
+}
+
+img{
+  max-width: $mx-width;
+}
+
+a{
+  color :$link--color;
+  text-decoration : none;
+}
+
+span{
+  font-weight: $light;
+}
+
+p, blockquote, li{
+  font-size  : $p--fz;
+  list-style : $p--lh;
+}
+
+p{
+  line-height: $p--lh;
+}
+
+// Estilos basicos encabezados
+h1, h2, h3, h4, h5, h6
+{
+  font-weight : $bold;
+}
+
+h1
+  {
+    font-size : $h1;
+  }
+h2
+  {
+    font-size : $h2;
+  }
+h3
+  {
+    font-size : $h3;
+  }
+h4
+  {
+    font-size : $h4;
+  }
+h5
+  {
+    font-size : $h5;
+  }
