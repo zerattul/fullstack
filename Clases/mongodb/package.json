@@ -1,0 +1,25 @@
+{
+  "name": "rest-mvc-nodejs-mongodb",
+  "version": "4.0.0",
+  "description": "En este proyecto desarrollaremos una aplicación REST - MVC con Autenticación, Node.js, Express y MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "supervisor server.js"
+  },
+  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-method-override": "0.0.3",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.6.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "pug": "^0.1.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "supervisor": "^0.11.0"
+  }
+}

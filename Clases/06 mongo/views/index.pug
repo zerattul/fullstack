@@ -26,13 +26,13 @@ block content
               td
                 a.button.edit(href="/editar/" + contacto._id) Editar
               td
-                form(method="post", action="/eliminar/" + contacto._id )
-                  input(type="hidden" name="_method" vale="DELETE")
-                  input.button.delete(type="button", value="Eliminar" onclick="eliminar(this)")
+                form(method="post", action="/eliminar/" + contacto._id)
+                  input.button.delete(type="button", value="Eliminar", onclick="eliminar(this)")
+                  input(type="hidden", name="_method", value="DELETE")
         script.
-          function eliminar(input){
-            var deleteOK = confirm('¿Estas seguro que quieres eliminar el registro?');
-            return (deleteOK) ? input.parentNode.submit() : false;
+          function eliminar(input) {
+            var deleteOk = confirm('¿Estás seguro de eliminar este registro?');
+            return (deleteOk) ? input.parentNode.submit() : false;
           }
       else
-        div.error No tienes datos para mostrar :`(
+        div.error No tienes contactos que mostrar

@@ -5,8 +5,8 @@ block content
     h1.head= title
     article.item
       form.form(method="post", action="/actualizar/" + data._id)
-        input(type="hidden" name="_method" value="PUT")
-        input(type="hidden", name="_id", value=data._id)
+        input(type="hidden", name="_method", value="PUT")
+        input(type="hidden", name="_id", value=data._id.toString())
         fieldset
           div
             input(type="text", name="name", value=data.name, require)

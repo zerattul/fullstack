@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+	section.container
+		h1.header= title
+		article.item
+			form.form(method="post", action="/signin")
+				fieldset
+					div
+						input#username(type="text", name="username" placeholder="usuario", required)
+					div
+						input#password(type="password", name="password", placeholder="password" required)
+					div
+						input.button.show(type="submit", value="Registrarse")
+					div
+						a.button.show(href="/login") Loguearse

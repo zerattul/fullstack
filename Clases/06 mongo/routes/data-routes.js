@@ -13,4 +13,4 @@ router
 	.put('/actualizar/:_id', tc.save)
 	.delete('/eliminar/:_id', tc.delete);
 
-module.exports = router;
+module.exports = router

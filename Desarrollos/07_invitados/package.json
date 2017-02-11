@@ -1,0 +1,21 @@
+{
+  "name": "07_invitados",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/build/index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base build/ --colors --progres",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "salvador carreon",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.22.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}

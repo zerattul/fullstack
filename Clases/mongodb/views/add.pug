@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+	section.container
+		h1.header= title
+		article.item
+			h2 Bienvenido #{user}
+			br
+			a.button.show(href="/logout") Cerrar sesión
+		article.item
+			form.form(method="post", action="/teams")
+				fieldset
+					div
+						input(type="text", name="name", placeholder="nombre", required)
+					div
+						input(type="text", name="twitter", placeholder="twitter", required)
+					div
+						input(type="text", name="country", placeholder="país", required)
+					div
+						input(type="text", name="side", placeholder="equipo", required)
+					div
+						input.button.add(type="submit", value="Agregar")
+		a.button.show(href="/") Inicio

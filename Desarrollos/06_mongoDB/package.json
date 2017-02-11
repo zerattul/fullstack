@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "2.0.0",
+  "description": "Crud mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "author": "salvador carreon",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-method-override": "0.0.3",
+    "express-session": "^1.15.0",
+    "mongoose": "^4.8.1",
+    "morgan": "^1.7.0",
+    "pug": "^0.1.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
